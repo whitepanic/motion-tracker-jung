@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="10000"
+        android:id="@+id/transition1">
+        <KeyFrameSet>
+            <KeyPosition
+                motion:motionTarget="@+id/red_star"
+                motion:framePosition="1"
+                app:keyPositionType="parentRelative"
+                motion:percentX="0.48"
+                motion:percentY="0.7" />
+
+            <KeyPosition
+                motion:motionTarget="@+id/red_star"
+                motion:framePosition="13"
+                app:keyPositionType="parentRelative"
+                motion:percentX="0.216"
+                motion:percentY="0.61" />
+
+            <KeyPosition
+                motion:motionTarget="@+id/red_star"
+                motion:framePosition="25"
+                app:keyPositionType="parentRelative"
+                motion:percentX="0.1"
+                motion:percentY="0.4" />
+
+            <KeyPosition
+                motion:motionTarget="@+id/red_star"
+                motion:framePosition="37"
+                app:keyPositionType="parentRelative"
+                motion:percentX="0.216"
+                motion:percentY="0.21" />
+
+            <KeyPosition
+                motion:motionTarget="@+id/red_star"
+                motion:framePosition="50"
+                app:keyPositionType="parentRelative"
+                motion:percentX="0.5"
+                motion:percentY="0.1" />
+
+            <KeyPosition
+                motion:motionTarget="@+id/red_star"
+                motion:framePosition="63"
+                app:keyPositionType="parentRelative"
+                motion:percentX="0.784"
+                motion:percentY="0.19" />
+
+            <KeyPosition
+                motion:motionTarget="@+id/red_star"
+                motion:framePosition="75"
+                app:keyPositionType="parentRelative"
+                motion:percentX="0.9"
+                motion:percentY="0.4" />
+
+            <KeyPosition
+                motion:motionTarget="@+id/red_star"
+                motion:framePosition="87"
+                app:keyPositionType="parentRelative"
+                motion:percentX="0.784"
+                motion:percentY="0.61" />
+
+            <KeyPosition
+                motion:motionTarget="@+id/red_star"
+                motion:framePosition="99"
+                app:keyPositionType="parentRelative"
+                motion:percentX="0.52"
+                motion:percentY="0.7" />
+
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/red_star"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintVertical_bias="0.7"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/red_star"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.7"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+    </ConstraintSet>
+</MotionScene>

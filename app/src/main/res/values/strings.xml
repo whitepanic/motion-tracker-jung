@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MotionTracker</string>
+    <string name="star">Star</string>
+    <string name="button_start">Start</string>
+    <string name="back">戻り</string>
+</resources>
